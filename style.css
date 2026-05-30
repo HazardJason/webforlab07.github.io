@@ -1,0 +1,365 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:#121212;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background-color:rgb(12, 12, 12);
+    position:fixed;
+    left:0;
+    top:0;
+    padding:30px;
+    overflow:auto;
+    border-right:2px solid #1DB954;
+}
+
+.logo-area{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo-area img{
+    width:80px;
+    margin-bottom:10px;
+}
+
+.logo-area h1{
+    color:#1DB954;
+    font-size:35px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    margin:18px 0;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:#1DB954;
+    margin-left:8px;
+}
+
+.sidebar small{
+    color:#888;
+}
+
+/* MAIN */
+
+main{
+    margin-left:260px;
+    width:100%;
+    padding:40px;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        #1c17af,
+        #0ec40e
+    );
+
+    padding:60px;
+    border-radius:25px;
+    margin-bottom:60px;
+}
+
+.hero h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    width:70%;
+    line-height:1.8;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.btn-green,
+.btn-dark{
+
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    margin-right:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-green{
+    background-color:black;
+    color:white;
+}
+
+.btn-dark{
+    background-color:#1d1d1d;
+    color:white;
+}
+
+.btn-green:hover,
+.btn-dark:hover{
+
+    transform:scale(1.05);
+}
+
+/* SECTIONS */
+
+section{
+    margin-bottom:70px;
+}
+
+h2{
+    color:#1DB954;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+h3{
+    margin:20px 0;
+    color:#1DB954;
+}
+
+p{
+    margin:15px 0;
+    line-height:1.8;
+}
+
+/* CARDS */
+
+.cards-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.music-card{
+    background-color:#1d1d1d;
+    padding:20px;
+    border-radius:20px;
+    width:300px;
+    transition:0.3s;
+}
+
+.music-card:hover{
+    background-color:#2a2a2a;
+    transform:translateY(-10px);
+}
+
+.music-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.music-card h3{
+    margin-top:15px;
+}
+
+/* GAME SECTION */
+
+.game-section{
+    background-color:#1b1b1b;
+    padding:30px;
+    border-radius:25px;
+}
+
+.game-content{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.game-content figure{
+    flex:1;
+}
+
+.game-content div{
+    flex:1;
+}
+
+.game-content img{
+    width:100%;
+    border-radius:20px;
+}
+
+figcaption{
+    margin-top:10px;
+    color:#aaa;
+    font-style:italic;
+}
+
+/* BLOCKQUOTE */
+
+blockquote{
+    background-color:#181818;
+    border-left:5px solid #1DB954;
+    padding:20px;
+    margin:25px 0;
+    font-style:italic;
+    color:#ccc;
+}
+
+/* LISTS */
+
+ol,ul{
+    margin-left:30px;
+    margin-top:20px;
+}
+
+li{
+    margin:10px 0;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+th,td{
+    border:1px solid #333;
+    padding:15px;
+    text-align:center;
+}
+
+th{
+    background-color:#1DB954;
+    color:black;
+}
+
+tr:hover{
+    background-color:#2c2c2c;
+}
+
+caption{
+    margin-bottom:15px;
+    font-size:22px;
+    color:#1DB954;
+    font-weight:bold;
+}
+
+/* AUDIO */
+
+audio{
+    width:100%;
+    margin-top:25px;
+}
+
+/* ASIDE */
+
+aside{
+    background-color:#1d1d1d;
+    padding:30px;
+    border-radius:25px;
+}
+
+/* CODE */
+
+pre{
+    background-color:black;
+    padding:20px;
+    border-radius:20px;
+    overflow:auto;
+    margin-top:20px;
+}
+
+code{
+    color:#1DB954;
+}
+
+/* MARK */
+
+mark{
+    background-color:#1DB954;
+    color:black;
+    padding:3px 8px;
+    border-radius:5px;
+}
+
+/* HR */
+
+hr{
+    margin:30px 0;
+    border:none;
+    height:2px;
+    background-color:#1DB954;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:70px;
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+small{
+    color:#888;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    main{
+        margin-left:0;
+    }
+
+    body{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        width:100%;
+    }
+
+}
